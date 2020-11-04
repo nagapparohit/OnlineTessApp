@@ -14,6 +14,7 @@ export class QuizComponent implements OnInit {
 
   public follow:number = 0;
 
+  private solutions = new Map();
 
   public question = {
     "id":undefined,
@@ -43,8 +44,7 @@ export class QuizComponent implements OnInit {
       a.innerText  = this.questionsList[this.follow].a;
       b.innerText = this.questionsList[this.follow].b;
       c.innerText = this.questionsList[this.follow].c;
-      d.innerText = this.questionsList[this.follow].d;
-    
+      d.innerText = this.questionsList[this.follow].d;    
       console.log(nextButton);
 
     }else{
@@ -54,6 +54,10 @@ export class QuizComponent implements OnInit {
 
   prevQuestion(prevButton){
     console.log(prevButton);
+  }
+
+  radioChangeHandler(radioButton){
+    console.log(radioButton.target.value);
   }
 
 }

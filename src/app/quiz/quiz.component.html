@@ -3,14 +3,14 @@
 
     <h1 #ques></h1>
 
-    <input type="radio" name="q" id="a" value="a" #radioa>
+    <input type="radio" name="q" id="a" value="a" (change)="radioChangeHandler($event)" #radioa>
     <label for="a" #optiona></label>
-    <input type="radio" name="q" id="b" value="b" #radiob>
+    <input type="radio" name="q" id="b" value="b" (change)="radioChangeHandler($event)" #radiob>
     <label for="b" #optionb></label>
     <br><br>
-    <input type="radio" name="q" id="c" value="c" #radioc>
+    <input type="radio" name="q" id="c" value="c" (change)="radioChangeHandler($event)" #radioc>
     <label for="c" #optionc></label>
-    <input type="radio" name="q" id="d" value="d" #radiod>
+    <input type="radio" name="q" id="d" value="d" (change)="radioChangeHandler($event)" #radiod>
     <label for="d" #optiond></label>
     <br><br>
     <button (click)="prevQuestion(ques)">prev</button>

@@ -18,9 +18,9 @@
     {
         "id":3,
         "ques":"From Below which is Programming language ?",
-        "a":"Hadoop",
-        "b":"PSQL",
+        "a":"SST",
+        "b":"Math",
         "c":"Java",
-        "d":"Angular"
+        "d":"English"
     }
 ]
