@@ -10,10 +10,10 @@
     {
         "id":2,
         "ques":"From Below which is RDMS?",
-        "a":"Hadoop",
+        "a":"HBASE",
         "b":"PSQL",
-        "c":"Java",
-        "d":"Angular"
+        "c":"MongoDB",
+        "d":"H2"
     },
     {
         "id":3,

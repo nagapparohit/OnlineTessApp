@@ -12,6 +12,18 @@ export class QuizComponent implements OnInit {
 
   public questionsList;
 
+  public follow:number = 0;
+
+
+  public question = {
+    "id":undefined,
+    "ques":"",
+    "a":"",
+    "b":"",
+    "c":"",
+    "d":""
+  }
+
   constructor(private httpClient:HttpClient) { }
 
   ngOnInit(): void {
@@ -21,6 +33,27 @@ export class QuizComponent implements OnInit {
     },err => {
       console.log(err);
     })
+  }
+
+  nextQuestion(nextButton,a,b,c,d){
+    this.follow++;
+    if(this.follow < this.questionsList.length){
+      console.log((this.questionsList[this.follow]).ques);
+      nextButton.innerText = this.questionsList[this.follow].ques;
+      a.innerText  = this.questionsList[this.follow].a;
+      b.innerText = this.questionsList[this.follow].b;
+      c.innerText = this.questionsList[this.follow].c;
+      d.innerText = this.questionsList[this.follow].d;
+    
+      console.log(nextButton);
+
+    }else{
+      this.follow = 0;
+    }
+  }
+
+  prevQuestion(prevButton){
+    console.log(prevButton);
   }
 
 }

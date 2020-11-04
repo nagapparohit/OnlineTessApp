@@ -1,1 +1,20 @@
 <p>quiz works!</p>
+<div>
+
+    <h1 #ques></h1>
+
+    <input type="radio" name="q" id="a" value="a" #radioa>
+    <label for="a" #optiona></label>
+    <input type="radio" name="q" id="b" value="b" #radiob>
+    <label for="b" #optionb></label>
+    <br><br>
+    <input type="radio" name="q" id="c" value="c" #radioc>
+    <label for="c" #optionc></label>
+    <input type="radio" name="q" id="d" value="d" #radiod>
+    <label for="d" #optiond></label>
+    <br><br>
+    <button (click)="prevQuestion(ques)">prev</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button (click)="nextQuestion(ques,optiona,optionb,optionc,optiond)">next</button>
+    
+</div>
