@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "ques":"From Below which is FE framework ?",
+        "a":"Hadoop",
+        "b":"PSQL",
+        "c":"Java",
+        "d":"Angular"
+    },
+    {
+        "id":2,
+        "ques":"From Below which is RDMS?",
+        "a":"Hadoop",
+        "b":"PSQL",
+        "c":"Java",
+        "d":"Angular"
+    },
+    {
+        "id":3,
+        "ques":"From Below which is Programming language ?",
+        "a":"Hadoop",
+        "b":"PSQL",
+        "c":"Java",
+        "d":"Angular"
+    }
+]

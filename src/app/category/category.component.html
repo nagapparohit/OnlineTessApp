@@ -1,6 +1,9 @@
 <p>category works!</p>
-<ul >
-    <li *ngFor="let category of categoryList">
+<h1>Select Category from below :</h1>
+<select >
+    <option *ngFor="let category of categoryList">
         {{category.name}}
-    </li>
-</ul>
+    </option>
+</select>
+<br><br>
+<button>Start Test</button>
