@@ -1,6 +1,6 @@
-<p>quiz works!</p>
 <div>
 
+    <button (click)="startQuiz(ques,optiona,optionb,optionc,optiond)">Start Quiz</button>
     <h1 #ques></h1>
 
     <input type="radio" name="q" id="a" value="a" (change)="radioChangeHandler($event)" #radioa>
@@ -16,5 +16,9 @@
     <button (click)="prevQuestion(ques)">prev</button>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button (click)="nextQuestion(ques,optiona,optionb,optionc,optiond)">next</button>
+    <br><br>
+    <button (click)="submitAction()">Submit</button><br><br>
+    <h2>{{result}}</h2>
+    <button (click)="reviewAction()">Review</button>
     
 </div>
